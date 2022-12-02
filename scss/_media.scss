@@ -1,0 +1,102 @@
+@media (max-width: 1000px){
+
+}
+
+@media (max-width: 881px){
+    .skills__item {
+        width: 40%;
+    }
+    .progress-bar {
+        margin: 2rem auto 0 auto;
+    }
+    .works__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 45rem;
+    }
+    .works__card {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 821px){
+    html {font-size: 90%;}
+
+}
+@media (max-width: 762px){
+
+}
+@media (max-width: 743px){
+    html {font-size: 80%;}
+    .experience__menu {
+        li {
+            gap: 10px;
+            p:first-of-type {
+                display: none;
+            }
+        }
+}
+}
+
+//Mobile
+@import 'burger';
+@media (max-width: 560px){
+    .hero__container {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero__image {
+        max-width: 80%;
+    }
+    .footer__nav {
+        display: none;
+    }
+    .separator {
+        display: none;
+    }
+    .hero__text-content {
+        border-top: 1px solid #000;
+        max-width: 100%;
+        margin: 0;
+    }
+    .about__flex-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__text-content {
+        max-width: 100%;
+    }
+    .works-card__text-content {
+        gap: 2rem;
+    }
+    .experience__info {
+        display: none;
+    }
+    .experience__menu {
+        li {justify-content: space-between;}
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 439px){
+    .skills__item {
+        width: 100%;
+    }
+    .progress-bar {
+        margin: 2rem 0 0 0 ;
+    }
+    .works__card {
+        margin: 0 auto;
+        &:first-of-type,&:last-of-type {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 379px){
+
+}
+

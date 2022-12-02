@@ -1,0 +1,98 @@
+//Размер шрифта всей страницы 100% - 16px - 1rem
+$htmlFontSize: 100%;
+//Ширина контейнера
+$layoutMaxWidth: 1160px;
+$layoutMinWidth: 375px;
+//Цвет фона
+$bgColor: #fff;
+//Центрирование заголовка блока
+$titleAlign: none;
+//Найстройки заголовков
+$hFont : 'Raleway', sans-serif;
+$hColor: #000;
+$h1Weight : 600;
+$h2Weight : 600;
+$h1Size: 2rem;
+$h2Size: 1.5rem;
+$h3Size: 1.125rem;
+//Настройки параграфа
+$paraFont: 'Raleway', sans-serif;
+$paraColor: #404040;
+$paraWeight: 400;
+$paraSize: 1rem;
+//Настройка отступов
+$sectionMargin: 0;
+$sectionPadding: 3.7rem 0;
+
+@mixin bgProperty (){
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+section,header,footer,body,ul {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin: $sectionMargin;
+	padding: $sectionPadding;
+}
+html {
+	font-size: $htmlFontSize;
+}
+body {
+	background: $bgColor;
+	font-family: $paraFont;
+}
+
+.container {
+	max-width: $layoutMaxWidth;
+	min-width: $layoutMinWidth;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.title {
+	text-align: $titleAlign;
+}
+
+h1 {font-size: $h1Size;font-weight: $h1Weight;}
+h2 {font-size: $h2Size;font-weight: $h2Weight;}
+h3 {font-size: $h3Size;}
+
+h1,h2,h3 {
+	color: $hColor;
+	font-family: $hFont;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	font-weight: $paraWeight;
+	font-size: $paraSize;
+	color: $paraColor;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+	&:hover {
+		color: rgba(0,0,0,.7);
+		transition: all .2s ease;
+	}
+}
+
