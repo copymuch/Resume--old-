@@ -29,13 +29,18 @@
 @media (max-width: 743px){
     html {font-size: 80%;}
     .experience__menu {
+        width: 100%;
         li {
             gap: 10px;
-            p:first-of-type {
-                display: none;
-            }
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
         }
 }
+    .experience__info,.ellipse-block{
+        display: none;
+    }
 }
 
 //Mobile
