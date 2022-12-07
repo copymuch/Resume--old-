@@ -223,14 +223,17 @@ header {
 }
 .experience__menu {
     width: 50%;
+    .dont-flex {
+        width: 20rem;
+    }
     li {
         padding: 5px;
         transition: all 0.4s ease;
+        border-bottom: 1px solid #000;
         cursor: pointer;
         &:hover {
             h3,p ,p:first-child{color: #fff;}
             background: #303249;
-            border-radius: 10px 0 0 10px;
         }
         display: flex;
         gap: 40px;
@@ -266,6 +269,16 @@ header {
     box-shadow: 0px 0px 10px rgba(0,0,0,.3);
 }
 
+.arrowDown {
+    transition: all 0.4s ease;
+    margin: 5px;
+}
+.rotate {
+    transition: (90deg);
+}
+.none {
+    display: none;
+}
 
 footer {
     background-color: #686868;

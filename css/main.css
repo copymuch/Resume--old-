@@ -328,9 +328,13 @@ header {
 .experience__menu {
   width: 50%;
 }
+.experience__menu .dont-flex {
+  width: 20rem;
+}
 .experience__menu li {
   padding: 5px;
   transition: all 0.4s ease;
+  border-bottom: 1px solid #000;
   cursor: pointer;
   display: flex;
   gap: 40px;
@@ -339,7 +343,6 @@ header {
 }
 .experience__menu li:hover {
   background: #303249;
-  border-radius: 10px 0 0 10px;
 }
 .experience__menu li:hover h3, .experience__menu li:hover p, .experience__menu li:hover p:first-child {
   color: #fff;
@@ -372,6 +375,19 @@ header {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.arrowDown {
+  transition: all 0.4s ease;
+  margin: 5px;
+}
+
+.rotate {
+  transition: 90deg;
+}
+
+.none {
+  display: none;
 }
 
 footer {
@@ -431,13 +447,15 @@ footer a {
   }
   .experience__menu {
     width: 100%;
+    justify-content: center;
   }
   .experience__menu li {
     gap: 10px;
-    width: 100%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
+    margin: 0 auto;
   }
   .experience__info, .ellipse-block {
     display: none;
@@ -558,9 +576,6 @@ footer a {
   .experience__menu {
     max-width: 100%;
     margin: 0 auto;
-  }
-  .experience__menu li {
-    justify-content: space-between;
   }
 }
 @media (max-width: 439px) {
