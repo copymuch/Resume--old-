@@ -217,6 +217,7 @@ header {
 }
 .experience__text-content{
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -229,7 +230,6 @@ header {
     li {
         padding: 5px;
         transition: all 0.4s ease;
-        border-bottom: 1px solid #000;
         cursor: pointer;
         &:hover {
             h3,p ,p:first-child{color: #fff;}
@@ -257,6 +257,10 @@ header {
     }
 }
 }
+.active {
+    display: block;
+}
+
 .experience__menu-img{
     display: flex;
     justify-self:flex-end;
@@ -267,17 +271,27 @@ header {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    transition: all 0.4s ease;
 }
 
-.arrowDown {
+.arrowDown{
     transition: all 0.4s ease;
     margin: 5px;
+    display: none;
 }
 .rotate {
-    transition: (90deg);
+    transform: rotate(90deg);
 }
-.none {
+.experience__item {
+    position: relative;
+}
+
+.item-info {
     display: none;
+    position: absolute;
+    transition: all .4s ease;
+    top: 90px;
+    left: 30%;
 }
 
 footer {
@@ -288,8 +302,8 @@ footer {
     padding: 1.7rem;
     a {
         font-weight: 600;
-    color: #fff;
-    font-size: 14px;
+        color: #fff;
+        font-size: 14px;
     }
 }
 .footer__horiz ,.footer__horiz ul {

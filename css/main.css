@@ -320,6 +320,7 @@ header {
 
 .experience__text-content {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -334,7 +335,6 @@ header {
 .experience__menu li {
   padding: 5px;
   transition: all 0.4s ease;
-  border-bottom: 1px solid #000;
   cursor: pointer;
   display: flex;
   gap: 40px;
@@ -364,6 +364,10 @@ header {
   font-size: 1.25rem;
 }
 
+.active {
+  display: block;
+}
+
 .experience__menu-img {
   display: flex;
   justify-self: flex-end;
@@ -375,19 +379,29 @@ header {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
 }
 
 .arrowDown {
   transition: all 0.4s ease;
   margin: 5px;
+  display: none;
 }
 
 .rotate {
-  transition: 90deg;
+  transform: rotate(90deg);
 }
 
-.none {
+.experience__item {
+  position: relative;
+}
+
+.item-info {
   display: none;
+  position: absolute;
+  transition: all 0.4s ease;
+  top: 90px;
+  left: 30%;
 }
 
 footer {
@@ -456,6 +470,13 @@ footer a {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    border-bottom: 1px solid #000;
+  }
+  .arrowDown {
+    display: block;
+  }
+  .experience__item.active {
+    padding-bottom: 10rem;
   }
   .experience__info, .ellipse-block {
     display: none;
@@ -549,8 +570,23 @@ footer a {
   .hero__image {
     max-width: 80%;
   }
+  .footer__container {
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+  }
+  .footer__horiz {
+    flex-wrap: wrap;
+  }
+  .footer__vert {
+    padding-top: 20px;
+  }
   .footer__nav {
-    display: none;
+    width: 100%;
+  }
+  .footer__nav ul {
+    gap: 10px 10px;
+    flex-wrap: wrap;
   }
   .separator {
     display: none;
@@ -584,11 +620,5 @@ footer a {
   }
   .progress-bar {
     margin: 2rem 0 0 0;
-  }
-  .works__card {
-    margin: 0 auto;
-  }
-  .works__card:first-of-type, .works__card:last-of-type {
-    display: none;
   }
 }

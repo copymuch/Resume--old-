@@ -38,8 +38,13 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
+            border-bottom: 1px solid #000;
         }
-}
+    }
+    .arrowDown {display: block;}
+    .experience__item.active {
+        padding-bottom: 10rem;
+    }   
     .experience__info,.ellipse-block{
         display: none;
     }
@@ -56,9 +61,25 @@
     .hero__image {
         max-width: 80%;
     }
-    .footer__nav {
-        display: none;
+    .footer__container {
+        justify-content: center;
+        align-items: center;
+        gap: 0 10px;
     }
+    .footer__horiz {
+        flex-wrap: wrap;
+    }
+    .footer__vert {
+        padding-top: 20px;
+    }
+    .footer__nav {
+        width: 100%;
+        ul {
+            gap: 10px 10px;
+            flex-wrap: wrap;
+        }
+    }
+
     .separator {
         display: none;
     }
@@ -92,13 +113,6 @@
     }
     .progress-bar {
         margin: 2rem 0 0 0 ;
-    }
-    .works__card {
-        margin: 0 auto;
-        &:first-of-type,&:last-of-type {
-            display: none;
-        }
-
     }
 }
 
