@@ -38,13 +38,14 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 auto;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #303249;
         }
     }
     .arrowDown {display: block;}
     .experience__item.active {
         padding-bottom: 10rem;
-    }   
+    }  
+    .item-info.active {display: block;}
     .experience__info,.ellipse-block{
         display: none;
     }
@@ -79,7 +80,6 @@
             flex-wrap: wrap;
         }
     }
-
     .separator {
         display: none;
     }
@@ -97,9 +97,6 @@
     }
     .works-card__text-content {
         gap: 2rem;
-    }
-    .experience__info {
-        display: none;
     }
     .experience__menu {
         max-width: 100%;
