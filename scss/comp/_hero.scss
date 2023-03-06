@@ -1,0 +1,56 @@
+.hero {
+    margin: 0;
+    background-color: #FCFEF7;
+    transition: 0.4s;
+    padding: 65px 0 0 0;
+}
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    p {transition: 0.4s;}
+}
+
+.hero__image {
+    max-width: 50%;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+.smear {
+    position: absolute;
+    max-width: 10%;
+    opacity: 0.1;
+    margin: 0px;
+}
+.smear1 {
+    top: 50px;
+}
+.smear2 {
+    right: 120px;
+    bottom: 150px;
+}
+.smear3 {
+    max-width: 7%;
+    top: 120px;
+    right: 250px;
+    rotate: 60deg;
+}
+.separator {
+    content: '';
+    border-left: 1px solid #D9D9D9;
+    height: 21.8rem;
+    width: 20px;
+    text-align: center;
+    position: relative;
+}
+.hero__text-content {
+    margin-right: 2.5rem;
+    p {
+        color: #4D4D4D;
+        font-size: 1.5rem;
+    }
+    max-width: 50%;
+
+}

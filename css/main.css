@@ -82,8 +82,16 @@ img {
   object-fit: contain;
 }
 
-.blue {
-  background-color: #303249;
+.grey {
+  border-left: 1px solid #686868;
+}
+
+.white {
+  border-left: 1px solid #fff;
+}
+
+.none {
+  z-index: -1;
 }
 
 .hero {
@@ -91,13 +99,6 @@ img {
   background-color: #FCFEF7;
   transition: 0.4s;
   padding: 65px 0 0 0;
-}
-
-.hero.blue {
-  background-color: #303249;
-}
-.hero.blue p {
-  color: #fff;
 }
 
 .hero__container {
@@ -124,6 +125,22 @@ img {
   margin: 0px;
 }
 
+.smear1 {
+  top: 50px;
+}
+
+.smear2 {
+  right: 120px;
+  bottom: 150px;
+}
+
+.smear3 {
+  max-width: 7%;
+  top: 120px;
+  right: 250px;
+  rotate: 60deg;
+}
+
 .separator {
   content: "";
   border-left: 1px solid #D9D9D9;
@@ -144,7 +161,6 @@ img {
 
 header {
   background-color: #303249;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   max-width: 100%;
@@ -308,18 +324,6 @@ header {
     }
 }
 */
-.grey {
-  border-left: 1px solid #686868;
-}
-
-.white {
-  border-left: 1px solid #fff;
-}
-
-.none {
-  z-index: -1;
-}
-
 .experience {
   background-color: #D9D9D9;
 }
@@ -362,7 +366,7 @@ header {
   max-width: 100%;
 }
 .experience__menu li:hover {
-  background: #303249;
+  background: linear-gradient(to right, #303249, #D9D9D9);
 }
 .experience__menu li:hover h3, .experience__menu li:hover p, .experience__menu li:hover p:first-child {
   color: #fff;
@@ -457,6 +461,14 @@ footer a {
 
 .footer__item {
   cursor: pointer;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 0;
+}
+.footer__item:hover {
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 a {

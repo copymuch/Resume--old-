@@ -1,0 +1,31 @@
+header {
+    background-color: #303249;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+
+.logo p{
+    color: #fff;
+}
+.header__nav,.footer__nav {
+    ul {
+        display: flex;
+        gap: 35px;
+    }
+    a {color: #fff;}
+    li:hover {
+        cursor: pointer;
+    }
+}
+.header__link {
+    color: #fff;
+}
+.burger {display: none;}
